@@ -15,9 +15,16 @@
 		<javaee.version>7.0</javaee.version>
 		<spring.version>4.3.6</spring.version>
 	</properties>
-	
+
 	<dependencies>
-	
+
+		<!-- Link Backend project -->
+		<dependency>
+			<groupId>org.ashqar</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<!-- Java EE API -->
 		<dependency>
 			<groupId>javax</groupId>
@@ -40,7 +47,7 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>4.3.6.RELEASE</version>
 		</dependency>
-		
+
 		<!-- JSTL -->
 		<dependency>
 			<groupId>jstl</groupId>

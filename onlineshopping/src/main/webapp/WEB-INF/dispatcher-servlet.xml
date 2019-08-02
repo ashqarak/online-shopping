@@ -11,17 +11,18 @@
 
 
 
-	<context:component-scan base-package="org.ashqar.onlineshopping.controller" />
-
+	<context:component-scan	base-package="org.ashqar.onlineshopping.controller" />
+	<context:component-scan	base-package="org.ashqar.shoppingbackend.daoImpl" />
 
 	<bean id="viewResolver"
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">	
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/views/" />
 		<property name="suffix" value=".jsp" />
-		</bean>
-		
-		<!-- Loading static resources -->
-		<mvc:annotation-driven/>
-		
-		<mvc:resources location="/assets/" mapping="/resources/**" />
+	</bean>
+
+	<!-- Loading static resources -->
+	<mvc:annotation-driven />
+
+	<mvc:resources location="/assets/"
+		mapping="/resources/**" />
 </beans>
